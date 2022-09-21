@@ -3,7 +3,7 @@ package ChemWordEquationConverter;
 public class Parser {
 	// Initialize the list of metals and non-metals...
 	private static Ions mm = new Ions();
-
+	
 	/**
 	 * Returns a string that converts a word equation to its formula 
 	 * @param wordEquation
@@ -19,6 +19,11 @@ public class Parser {
 		// First Solve
 		String ReactantFirstSolved[] = Parser.firstSolve(Reactant);
 		String ProductFirstSolved[] = Parser.firstSolve(Product);
+		/*
+		System.out.println(Arrays.toString(ReactantFirstSolved));
+		System.out.println(Arrays.toString(ProductFirstSolved));
+		*/
+		
 		// Second Solve
 		String ReactantFinal[] = Parser.secondSolve(ReactantFirstSolved);
 		String ProductFinal[] = Parser.secondSolve(ProductFirstSolved);	
@@ -150,7 +155,7 @@ public class Parser {
 	First split the equation into two where the index of 0 is the reactant and 1
 	is the product
 	**/
-	private static String[] validateAndSplit(String unparsedEq) {
+	public static String[] validateAndSplit(String unparsedEq) {
 		String temp[] = unparsedEq.split("\s=\s");
 		if (temp.length != 2) {
 			System.out.println("Please fix ur equation...");

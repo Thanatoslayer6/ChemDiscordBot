@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class Bot {
-	public static void main(String[] args) throws LoginException {
+	public static void main(String[] args) throws LoginException {	
 		Dotenv conf = Dotenv.configure().load();
 		JDABuilder jdb = JDABuilder.createDefault(conf.get("TOKEN"));
 		JDA jda = jdb
@@ -20,6 +20,9 @@ public class Bot {
 		// Commands
 		jda.upsertCommand("weq", "Converts a chemical word equation")
 			.addOption(OptionType.STRING, "equation", "The complete chemical word equation", true)
+			.queue();
+		jda.upsertCommand("bal", "Balances a chemical equation")
+			.addOption(OptionType.STRING, "equation", "The complete chemical equation", true)
 			.queue();
 	}
 }

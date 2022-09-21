@@ -101,7 +101,37 @@ public class Ions {
 		{"Carbon dioxide", "CO2", "0"},
 		{"Water", "H2O", "0"},
 		{"Dihydrogen monoxide", "H2O", "0"},
-		// Hydrocarbons o_o
+		// Hydrocarbons (Alkane) - CnH2n+2
+		{"Methane", "CH4", "0"},
+		{"Ethane", "C2H6", "0"},
+		{"Propane", "C3H8", "0"},
+		{"Butane", "C4H10", "0"},
+		{"Pentane", "C5H12", "0"},
+		{"Hexane", "C6H14", "0"},	
+		{"Heptane", "C7H16", "0"},
+		{"Octane", "C8H18", "0"},
+		{"Nonane", "C9H20", "0"},	
+		{"Decane", "C10H22", "0"},
+		// Hydrocarbons (Alkene) - CnH2n
+		{"Ethene", "C2H4", "0"},
+		{"Propene", "C3H6", "0"},
+		{"Butene", "C4H8", "0"},
+		{"Pentene", "C5H10", "0"},
+		{"Hexene", "C6H12", "0"},	
+		{"Heptene", "C7H14", "0"},
+		{"Octene", "C8H16", "0"},
+		{"Nonene", "C9H18", "0"},	
+		{"Decene", "C10H20", "0"},
+		// Hydrocarbons (Alkyne) - CnH2n-2
+		{"Ethene", "C2H2", "0"},
+		{"Propene", "C3H4", "0"},
+		{"Butene", "C4H6", "0"},
+		{"Pentene", "C5H8", "0"},
+		{"Hexene", "C6H10", "0"},	
+		{"Heptene", "C7H12", "0"},
+		{"Octene", "C8H14", "0"},
+		{"Nonene", "C9H16", "0"},	
+		{"Decene", "C10H18", "0"},
 	};
 
 	public int NumOfMetals() {
